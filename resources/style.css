@@ -1,0 +1,28 @@
+
+
+h1 {
+font-family:"georgia";
+color: white;
+text-align: center;
+
+}
+
+body{
+ background-image: url("http://bestanimations.com/Money/money-animated-gif-4.gif");
+ background-repeat: repeat;
+ text-align: center;
+ font-size: 70px;
+ padding-top:100px;
+ padding-right: 100px;
+ padding-left: 100px;
+
+
+}
+
+
+
+
+#gettingStarted{
+	font-size: 200%;
+}
+
