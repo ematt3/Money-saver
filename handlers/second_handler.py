@@ -7,12 +7,11 @@ from models import book
 
 class SecondHandler(webapp2.RequestHandler):
     def get(self):
-    	logging.info("SecondHandler")
-    	books = book.Book.query().fetch()
-    	# do stuff with books...
+        logging.info("SecondHandler")
+        books = book.Book.query().fetch()
+        # do stuff with books...
         html_params = {
-            "title": "Second Title",
-            "content": "Goodbye"
+            "title": "Getting Started",
         }
-        template = jinja_env.env.get_template('templates/tmpl.html')
+        template = jinja_env.env.get_template('templates/gettingstarted.html')
         self.response.out.write(template.render(html_params))
