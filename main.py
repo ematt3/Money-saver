@@ -10,4 +10,5 @@ jinja_env.init(os.path.dirname(__file__))
 app = webapp2.WSGIApplication([
     ('/', main_handler.MainHandler),
     ('/second', second_handler.SecondHandler),
+    ('/progress',TrackItem_Handler.TrackItemHandler),
 ], debug=True)
