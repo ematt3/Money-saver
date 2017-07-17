@@ -15,10 +15,20 @@ body{
  padding-top:100px;
  padding-right: 100px;
  padding-left: 100px;
+ color: white;
 
 
 }
 
+h2{
+ 
+ color: white;
+ text-align: center;
+}
+
+a{
+ color: white;
+}
 
 
 
