@@ -26,10 +26,7 @@ class MainHandler(webapp2.RequestHandler):
         self.response.out.write(template.render(html_params))
 
 
-# class Comment(ndb.Model):
-#           author = ndb.StringProperty()
-
-
+ 
     def post(self):
             author = user.get_current_user()
             if author != None:
@@ -37,10 +34,32 @@ class MainHandler(webapp2.RequestHandler):
                  self.redirect("/")
 
 
+ 
+class FriendList(webapp2.RequestHandler):
+    def get(self):
+    	logging.info(user.get_search_friend())
 
-# class FriendList(webapp2.RequestHandler):
-    # def get(self):
-        
+
+
+    	html_friend = user.get_search_friend()
+
+    	html_friends = {
+    		"html_friendlist": html_friend,
+
+
+    	}
+
+
+
+ 	template = jinja_env.env.get_template('templates/friend.html')
+        self.response.out.write(template.render(html_friends))
+
+
+        def post(self):
+        	html_friend = user.get_search_friend()
+        	if html_friend != None:
+        			self.redirect('/second')
+
 
 
 
