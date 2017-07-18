@@ -13,18 +13,16 @@ class TrackItemHandler(webapp2.RequestHandler):
 		self.response.out.write(template.render(html_params))
 
 #Get information for comments and post of images
-		def post(self):
-			logging.info("USER SAID POST")
-			r_user = self.request.get("usrform")
-			r_form = self.request.get("fileToUpload")
-			r_comit = self.request.get("comment")
+	def post(self):
+		logging.info("USER SAID POST")
+		r_user = self.request.get("usrform")
+		r_form = self.request.get("fileToUpload")
+		r_comit = self.request.get("comment")
 
-			TrackItem = Save_Model. SaveModel(
-				username= r_user,
-				
+		TrackItem = Save_Model. SaveModel(
+			username= r_user,)
+		self.redirect("/progress")
 
-
-
-				)
+ 
 
 

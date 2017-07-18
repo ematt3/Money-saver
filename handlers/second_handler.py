@@ -25,4 +25,4 @@ class SecondHandler(webapp2.RequestHandler):
             user_responses = r_user,
             )
         new_user.put()
-        self.redirect("/progress")
+        self.redirect("/profile")
