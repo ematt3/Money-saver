@@ -1,0 +1,38 @@
+button {
+text-align: center;
+ background-color: black;
+        color: green;
+        padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px
+    }
+    
+/*    .small-btn {
+        width: 50px;
+        height: 25px;
+    }
+    
+    .medium-btn {
+        width: 70px;
+        height: 30px;
+    }
+    
+    .big-btn {
+        width: 90px;
+        height: 40px;
+*/
+
+/*
+
+     }
+    }
+
+
+}*/
+
+#tracking_pages{
+	.big-btn
+	display: inline;
+}

@@ -1,4 +1,4 @@
-#Makes a new page for tracking items
+# Makes a new page for tracking items
 import jinja_env
 import logging
 import webapp2
