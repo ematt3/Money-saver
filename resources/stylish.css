@@ -1,11 +1,10 @@
 h1 {
-    background-color: green;
+	font-size: 300%;
+	font-family: "Times New Roman", Times, serif;
 }
 
-div {
-    background-color: lightblue;
+label {
+	font-size: 100%;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-p {
-    background-color: yellow;
-}
