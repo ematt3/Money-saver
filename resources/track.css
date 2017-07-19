@@ -1,14 +1,13 @@
 button {
-text-align: center;
- background-color: black;
-        color: green;
-        padding: 10px;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        margin:10px;
-        
-    }
+    text-align: center;
+    background-color: black;
+    color: green;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:10px;
+}
 
 #tracking_pages{
     display: inline;
@@ -18,7 +17,6 @@ text-align: center;
 h1 {
     color: green;
     text-align: center;
-    background-blend-mode: 
 
 }
 
@@ -55,7 +53,7 @@ button {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 10%;
   font-size: 18px;
 }
 
@@ -69,6 +67,13 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
+body{
+ background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUVFRUXFRUVFRUVFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0OFQ8PFS0dFR0tLS0tLSstLS0tLS0tKy0rLS0tLSstLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EABgQAQEBAQEAAAAAAAAAAAAAAAABEQIS/8QAGQEBAQEBAQEAAAAAAAAAAAAAAQACAwUE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwD1PmNYI3HjR8ikaHLTUKkaUhjcKhkUhKUMUhahWHBhkKFRRQOJVJWDCVhZsRwAKg2KJAYQEAaMZoZRwMoMts0UMUY3gZwMOddKzYxQ51NBlO0bjMjUjrCYZFI1G5CSMLRMiUUaJKiKKWKFJYqkVpoVSKiEKIICCKoDIaATNiNEZAZrSFTIpZFArNarNjFDPVZrdZxmphLymQ7tcsxqR1hMag0twksxrSTUpDjRTQJiSiRSKRIMS1JVVakkCEkqiEzgxqgBkVoM4gCyAmdNFZoFZrQZTNjFjdFZoc0UyHWNxkusLUjTMLTRMURTSgwtFqIQtJFIpAqIostJCoiFKrEtCQpGJKrEAAkKyljONYBQzYLDRGEMZNDIZrNjTNZoZIQDq3IzGnSNNYhDGkYRGo1CYRE0WpSySkpSyU0kMROqpJEBJFIJFJJAWEChYzSmUzRWqzWaAGmQmeg0GQwOmmemQzajiZyh0jUc43HSFpqMmVqFqGAxokhRotagSlFVEUoQtSSiUSSWBJrEFUklqCFGFVIJUVlIVIBmpBlKimsWihVmtMWsUCpIBqNSs8ttQmNMyFuFqFmNEkiGNQmKoxpCEVJEYUklUikkgkkoUqKRQkFqCQVQSZaAoZo01lihCrRaKmWa1az0xQNTOpnQ68mCUx0hbMZhaLUpEMahMaZhaia1QatJaoWoooK1I1QDUmlBFqSpgtMSCsStCZsVItCSWjUFWbTazWLUFoVZAGFnQBWaaKzUyliZDcajMajcLcpjOlpNFiVolq0ysNRqUtRaIsaTSgMMJQlOpIEVIoRJNAJaiLRUNSSGoLWbUmUrQrBYyEzTWazUKNVFZC1mqs9Vm0D0hqGp1jUYnTWtxNyliVrWtLUaY06ZS1pjPNaaiLTMWtaSWVqTSBpShgh0lJAIgJaEgglahVaEkNZtZ0G0VC0JaxrVrErNCrNNrFrNCrNptZ1mpJi9pnQ661HPW5WpU3GoxplbLcreuetNSlqNSsaY1E1aYyiW0zpJaTOpam4Bo06m9ZQGo6gkiEElaFRWdBrNQtFoNFo0azqNYWs2s2hUWgM6hWbSLWaGahUA3K1Kk1C3K1Kk1C1KfSTWpqNJNFaUmkUUSorUkgikgdSSC1JJdUakEmdSFCrNSFTNGlMhi0WpMJkUIUM2s2pM0Od7STIf/9k=");
+ background-repeat: repeat;
+
+
+
+}
 
 
 
