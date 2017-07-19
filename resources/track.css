@@ -6,8 +6,18 @@ text-align: center;
         border-radius: 10px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
-        margin:10px
+        margin:10px;
+        
     }
+
+#tracking_pages{
+    display: inline;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
     
 /*    .small-btn {
         width: 50px;
@@ -32,8 +42,5 @@ text-align: center;
 
 }*/
 
-#tracking_pages{
-	.big-btn
-	display: inline;
-	
+
 }
