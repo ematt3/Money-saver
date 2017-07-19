@@ -16,6 +16,7 @@ class MainHandler(webapp2.RequestHandler):
         current_user = users.get_current_user()
 
 
+
         html_params = {
             "title": "SAVE IT UP",
             "content": "Hello",
