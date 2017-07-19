@@ -5,6 +5,7 @@ import webapp2
 
 
 from models import money_model
+from google.appengine.api import users
 class SecondHandler(webapp2.RequestHandler):
     def get(self):
         logging.info("SecondHandler")
@@ -29,11 +30,14 @@ class SecondHandler(webapp2.RequestHandler):
         logging.info(r_monthlyWage)
         logging.info(r_currentSavings)
 
+        user = users.get_current_user()
+
         new_user = money_model.moneyModel(
             price = float(r_price),
             time = int(r_time),
             monthlyWage = float(r_monthlyWage),
-            currentSavings = float(r_currentSavings)
+            currentSavings = float(r_currentSavings),
+            user_email = user.email(),
             )
 
         new_user.put()
