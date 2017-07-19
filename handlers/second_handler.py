@@ -19,10 +19,16 @@ class SecondHandler(webapp2.RequestHandler):
     def post(self):
 
         logging.info("There was a post")
-        r_user = self.request.get("form_user")
+        r_price = self.request.get("form_price")
+        r_time = self.request.get("form_time")
+        r_monthlyWage = self.request.get("form_monthly_wage")
+        r_currentSavings = self.request.get("form_current_savings")
 
         new_user = money_model.moneyModel(
-            user_responses = r_user,
+            price = r_price,
+            time = r_time,
+            monthlyWage = r_monthly_wage,
+            currentSavings = r_currentSavings
             )
         new_user.put()
         self.redirect("/profile")
