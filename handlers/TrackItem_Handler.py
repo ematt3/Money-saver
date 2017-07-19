@@ -4,16 +4,24 @@ import logging
 import webapp2
 from google.appengine.ext import ndb
 from models import money_model
+from google.appengine.api import users
 class TrackItemHandler(webapp2.RequestHandler):
 	def get(self):
 		logging.info("TrackItemHandler")
-		track = money_model.moneyModel.query().get()
+		user=users.get_current_user()
+		track = money_model.moneyModel.query(money_model.moneyModel.user_email == user.email()).get()
+
+		if track == None:
+			self.redirect("/second")
+			return
 
 		html_params = {
 			"title": "Tracked Item List",
 			"content": "Selected Items Listed Below:",
 			"totalCost": track.price,
 		}
+
+
 		template = jinja_env.env.get_template('templates/Track.html')
 		self.response.out.write(template.render(html_params))
 
