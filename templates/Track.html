@@ -17,10 +17,13 @@
 	<a href="/profile"><button >Profile</button></a>
 </div>
 
-<p>{{totalCost}}</p>
-<input id="amount"></input>
-<button id="add">Add</button>
-<button id="subtract">Subtract</button>
+<p>{{current}}/{{totalCost}}</p>
+<form Method=Post>
+	<input type="text" name=form_currentSavings></input>
+	<button id="update">What is the new total?</button>
+<!-- 	<button id="subtract">Subtract</button> -->
+	<input type="hidden" name="modelKey" value={{modelKey}}>
+</form>
 
 
 
@@ -47,9 +50,6 @@
    </body>
 
 
-
-
-{{totalCost}}
 
 </body>
 

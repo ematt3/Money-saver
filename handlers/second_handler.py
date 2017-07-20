@@ -23,12 +23,12 @@ class SecondHandler(webapp2.RequestHandler):
         r_price = self.request.get("form_price")
         r_time = self.request.get("form_time")
         r_monthlyWage = self.request.get("form_monthlyWage")
-        r_currentSavings = self.request.get("form_currentSavings")
+
 
         logging.info(r_price)
         logging.info(r_time)
         logging.info(r_monthlyWage)
-        logging.info(r_currentSavings)
+
 
         user = users.get_current_user()
 
@@ -36,7 +36,7 @@ class SecondHandler(webapp2.RequestHandler):
             price = float(r_price),
             time = int(r_time),
             monthlyWage = float(r_monthlyWage),
-            currentSavings = float(r_currentSavings),
+            # currentSavings = float(r_currentSavings),
             user_email = user.email(),
             )
 
