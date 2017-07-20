@@ -25,8 +25,7 @@ class TrackItemHandler(webapp2.RequestHandler):
 			"title": "Tracked Item List",
 			"content": "Selected Items Listed Below:",
 			"totalCost": track.price,
-			# "html_name": name_user,
-
+			
 
 		}
 

@@ -6,6 +6,7 @@ class moneyModel(ndb.Model):
 	time = ndb.IntegerProperty()
 	monthlyWage = ndb.FloatProperty()
 	currentSavings = ndb.FloatProperty()
+	
 
 	author = ndb.StringProperty()
 	user_responses = ndb.StringProperty()
