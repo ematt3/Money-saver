@@ -9,20 +9,26 @@
 <h1>$ave Up That Money$</h1>
 <body>
 	
-
+<div id=alignment>
 	<div id =tracking_pages>
-	<a href="/progress"><button>TrackingItem</button></a>
-	<button id= friendProgress>View other progress</button>
-	<button id= friends>Friend List</button>
-	<a href="/profile"><button >Profile</button></a>
+		<a href="/progress"><button>TrackingItem</button></a>
+		<button id= friendProgress>View other progress</button>
+		<button id= friends>Friend List</button>
+		<a href="/profile"><button >Profile</button></a>
+	</div>
+<br>
+	<font size=10><p id="numbers" p>{{current}}/{{totalCost}}</p></font>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </div>
-
-<p>{{current}}/{{totalCost}}</p>
-<form Method=Post>
-	<input type="text" name=form_currentSavings></input>
-	<button id="update">What is the new total?</button>
-<!-- 	<button id="subtract">Subtract</button> -->
-	<input type="hidden" name="modelKey" value={{modelKey}}>
+<form id=edits Method=Post>
+		<span><input type="text" name=form_currentSavings></input></span>
+		<input type="submit" value="What is the new total?" id="update">
+		<input type="hidden" name="modelKey" value={{modelKey}}>
 </form>
 
 
